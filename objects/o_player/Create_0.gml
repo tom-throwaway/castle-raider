@@ -6,6 +6,9 @@ vsp = 0;
 max_hsp = 2;
 walk_spd = 1.5;
 
+hsp_decimal = 0;
+vsp_decimal = 0;
+
 // friction
 drag = 0.12;
 
