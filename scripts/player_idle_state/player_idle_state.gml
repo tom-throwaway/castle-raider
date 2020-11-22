@@ -17,8 +17,7 @@ function player_idle_state(){
 	}
 	
 	if (jump) {
-		state = states.JUMP;
-		vsp = jump_spd;
+		jumped();
 	}
 	
 	if (block) {

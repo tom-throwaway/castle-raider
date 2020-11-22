@@ -14,11 +14,26 @@ function player_jump_state(){
 		} else {
 			state = states.IDLE;	
 		}
+		
+		// create dust if landing
+		if (vsp > 0) {
+			instance_create_layer(x, y, "Dust", o_player_dust_land);	
+		}
 	}
 	
 	if (attack) {
 		state = states.ATTACK;
 		image_index = 0;
+	}
+	
+	// enable double jump
+	if (jump) {
+		jumped();	
+	}
+	
+	// enable smaller jump
+	if (vsp < 0 && !jump_held) {
+		vsp = max(vsp, jump_spd / jump_dampener);
 	}
 
 	// APPLY MOVEMENT
