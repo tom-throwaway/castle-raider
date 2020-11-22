@@ -7,24 +7,15 @@ function player_block_state(){
 	// CALCULATE MOVEMENT
 	calc_movement();
 	
-	// check state
+	// CHECK STATE
+	
+	// blocking
+	block_check();
+	
+	// attack
 	if (attack) {
 		state = states.ATTACK;
 		image_index = 0;
-	}
-	
-	if (block) {
-		hsp = 0;
-	} else {
-		if (hsp != 0) {
-			if (!on_ground()) {
-				state = states.JUMP;	
-			} else {
-				state = states.WALK;	
-			}
-		} else {
-			state = states.IDLE;	
-		}
 	}
 	
 	if (jump) {

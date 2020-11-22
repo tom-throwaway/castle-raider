@@ -7,7 +7,7 @@ function player_attack_state(){
 	// CALCULATE MOVEMENT
 	calc_movement();
 	
-	// check state
+	// CHECK STATE
 	if (image_index >= image_number - sprite_get_speed(sprite_index)/room_speed) {
 		if (!on_ground) {
 			state = states.JUMP;

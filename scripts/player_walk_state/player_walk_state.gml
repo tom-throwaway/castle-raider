@@ -7,7 +7,7 @@ function player_walk_state(){
 	// CALCULATE MOVEMENT
 	calc_movement();
 	
-	// check state
+	// CHECK STATE
 	if (hsp == 0) {
 		state = states.IDLE;	
 	}
@@ -34,6 +34,12 @@ function player_walk_state(){
 	
 	if (block) {
 		state = states.BLOCK;
+		hsp = 0;
+	}
+	
+	// crouch
+	if (down) {
+		state = states.CROUCH;
 		hsp = 0;
 	}
 

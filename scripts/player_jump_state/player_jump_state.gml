@@ -7,7 +7,7 @@ function player_jump_state(){
 	// CALCULATE MOVEMENT
 	calc_movement();
 	
-	// check state
+	// CHECK STATE
 	if (on_ground()) {
 		if (hsp != 0) {
 			state = states.WALK;	
