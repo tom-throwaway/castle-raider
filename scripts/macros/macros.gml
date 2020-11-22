@@ -4,7 +4,10 @@ function macros(){
 
 }
 
+// tiles
 #macro VOID		0
 #macro SOLID	1
 #macro PLATFORM	2
 
+// alarms
+#macro CAMERA_RESET 0
