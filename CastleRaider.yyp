@@ -3,6 +3,7 @@
     {"id":{"name":"s_player_attack_walk","path":"sprites/s_player_attack_walk/s_player_attack_walk.yy",},"order":2,},
     {"id":{"name":"player_crouch_block_state","path":"scripts/player_crouch_block_state/player_crouch_block_state.yy",},"order":6,},
     {"id":{"name":"player_jump_state","path":"scripts/player_jump_state/player_jump_state.yy",},"order":3,},
+    {"id":{"name":"t_tile_castle","path":"tilesets/t_tile_castle/t_tile_castle.yy",},"order":1,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":3,},
     {"id":{"name":"jumped","path":"scripts/jumped/jumped.yy",},"order":7,},
     {"id":{"name":"o_player_dust_land","path":"objects/o_player_dust_land/o_player_dust_land.yy",},"order":1,},
@@ -14,6 +15,7 @@
     {"id":{"name":"s_player_dust_jump","path":"sprites/s_player_dust_jump/s_player_dust_jump.yy",},"order":9,},
     {"id":{"name":"jump_dust","path":"scripts/jump_dust/jump_dust.yy",},"order":8,},
     {"id":{"name":"t_collisions","path":"tilesets/t_collisions/t_collisions.yy",},"order":0,},
+    {"id":{"name":"s_tile_castle","path":"sprites/s_tile_castle/s_tile_castle.yy",},"order":1,},
     {"id":{"name":"s_player_jump","path":"sprites/s_player_jump/s_player_jump.yy",},"order":7,},
     {"id":{"name":"s_player_walk","path":"sprites/s_player_walk/s_player_walk.yy",},"order":8,},
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":2,},
@@ -50,9 +52,9 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [
-    {"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},
-    {"name":"rm_00","path":"rooms/rm_00/rm_00.yy",},
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_00","path":"rooms/rm_00/rm_00.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -75,16 +77,16 @@
     {"folderPath":"folders/Sprites/Tiles.yy","order":1,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
-    {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.0.529",
+    "IDEVersion": "2.3.1.542",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "CastleRaider",
   "tags": [],
   "resourceType": "GMProject",
